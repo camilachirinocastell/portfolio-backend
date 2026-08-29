@@ -6,7 +6,7 @@
   "scripts": {
   "build": "tsc",
   "start": "node dist/app.js",
-  "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts"
+  "dev": "nodemon --watch 'src/**/*.ts' --exec 'tsx' src/app.ts"
 },
   "keywords": [],
   "author": "",
@@ -34,7 +34,7 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^26.4.0",
     "nodemon": "^3.1.14",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.23.12",
     "typescript": "^6.0.3"
   }
 }

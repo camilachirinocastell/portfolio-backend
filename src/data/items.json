@@ -1,0 +1,20 @@
+[
+  {
+    "id": "e44b5efd-bf9c-4820-ae63-2b6d773ad712",
+    "title": "Conversational AI Agent Development",
+    "description": "Integration of LLM models with custom knowledge bases (RAG) to automate customer support, lead qualification, or internal help desks.",
+    "category": "AI",
+    "priceEstimate": "From $600 USD",
+    "deliveryTime": "30 days",
+    "status": "active"
+  },
+  {
+    "id": "f58c73d2-c283-4927-aa31-6e84a287a2df",
+    "title": "REST API Development with TypeScript and Express",
+    "description": "Layered, modular backend with JWT authentication, schema validation with Zod, and cloud deployment.",
+    "category": "Fullstack",
+    "priceEstimate": "From $450 USD",
+    "deliveryTime": "20 days",
+    "status": "active"
+  }
+]

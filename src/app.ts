@@ -5,7 +5,7 @@
 import express from 'express';
 import cors from 'cors';
 import { ENV } from './config/env.js';
-import itemRoutes from './routes/item.routes.js';
+import routes from './routes/index.js';
 
 const app = express();
 
@@ -21,8 +21,8 @@ app.use(cors());
 // Sirve el frontend estático opcional, si existe, desde /public.
 app.use(express.static('public'));
 
-// Monta las rutas del catálogo de servicios bajo el prefijo /items.
-app.use('/items', itemRoutes);
+// Monta todas las rutas del proyecto (/users y /items).
+app.use(routes);
 
 app.listen(ENV.PORT, () => {
   console.log(`Server running on port ${ENV.PORT}`);

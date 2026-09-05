@@ -37,7 +37,7 @@ export class ItemController {
   }
 
   // PUT /items/:id
-  async update(req: Request, res: Response): Promise<void> {
+  async update(req: Request<{ id: string }>, res: Response): Promise<void> {
     const { id } = req.params;
     const updatedItem = await itemService.updateService(id, req.body);
 
@@ -57,7 +57,7 @@ export class ItemController {
   }
 
   // DELETE /items/:id
-  async delete(req: Request, res: Response): Promise<void> {
+  async delete(req: Request<{ id: string }>, res: Response): Promise<void> {
     const { id } = req.params;
     const wasDeleted = await itemService.deleteService(id);
 

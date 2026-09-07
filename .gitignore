@@ -1,3 +1,16 @@
+# Dependencias
 node_modules/
+
+# Build de TypeScript
 dist/
+
+# Variables de entorno
 .env
+
+# Crash dumps de Git Bash en Windows
+*.stackdump
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.DS_Store

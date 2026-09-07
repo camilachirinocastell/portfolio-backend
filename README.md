@@ -4,7 +4,7 @@ REST API for managing the service catalog of a Fullstack & AI Engineer
 portfolio. Anyone can browse the public catalog; only the authenticated
 admin, using a JWT, can create, edit, or delete services.
 
-**Live URL:** https://TU-SERVICIO.onrender.com _(pending — added after deployment)_
+**Live URL:** https://portfolio-backend-oypt.onrender.com
 
 ## Tech stack
 

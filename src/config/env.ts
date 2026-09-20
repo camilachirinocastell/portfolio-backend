@@ -6,11 +6,20 @@
 
 import dotenv from 'dotenv';
 
-// Carga las variables definidas en el archivo .env hacia process.env.
 dotenv.config();
+
+// Si falta una variable obligatoria, el servidor no debe arrancar
+// silenciosamente con un valor inseguro por defecto.
+function requireEnv(key: string): string {
+  const value = process.env[key];
+  if (!value) {
+    throw new Error(`Falta la variable de entorno obligatoria: ${key}`);
+  }
+  return value;
+}
 
 export const ENV = {
   PORT: process.env.PORT || 3000,
-  JWT_SECRET: process.env.JWT_SECRET || 'fallback-secret-key-123',
+  JWT_SECRET: requireEnv('JWT_SECRET'),
   NODE_ENV: process.env.NODE_ENV || 'development',
 };
